@@ -5,8 +5,8 @@ RUN gem install bundler
 WORKDIR /tmp
 ADD Gemfile Gemfile
 ADD Gemfile.lock Gemfile.lock
-RUN bundle update marcel mimemagic
 RUN bundle install
+RUN bundle update marcel mimemagic
 ENV APP_HOME /areascouts_conversion
 RUN mkdir -p $APP_HOME
 WORKDIR $APP_HOME
