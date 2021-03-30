@@ -6,6 +6,10 @@
 4. copy the content of database.yml.sample into config/database.yml
 5. docker-compose exec web rails db:create
 
+
+# if you some error pls added it.
+docker-compose run web bundle update marcel mimemagic
+
 Additional info
 
 1. docker-compose logs -f (to view realtime logs)
