@@ -6,8 +6,7 @@ WORKDIR /tmp
 ADD Gemfile Gemfile
 ADD Gemfile.lock Gemfile.lock
 RUN bundle install
-RUN bundle update marcel mimemagic
-ENV APP_HOME /areascouts_conversion
+ENV APP_HOME /app_name
 RUN mkdir -p $APP_HOME
 WORKDIR $APP_HOME
 ADD . $APP_HOME
